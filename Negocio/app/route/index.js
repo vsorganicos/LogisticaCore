@@ -2,6 +2,7 @@
 
 const Joi = require('joi');
 const controller = require('../controller');
+const health = require('../util/system-health');
 
 var routes = [];
 
@@ -39,6 +40,11 @@ routes.push(
       }
     },
     handler: controller.calcularFrete
+  },
+  {
+    method: 'GET',
+    path: '/system-health',
+    handler: health.health
   }
 );
 

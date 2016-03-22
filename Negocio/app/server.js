@@ -12,7 +12,7 @@ server.connection({
 });
 
 var options = {
-    opsInterval: 20000,
+    opsInterval: 40000,
 	reporters: [{
         reporter: require('good-console'),
         events: { request: '*', response: '*' }

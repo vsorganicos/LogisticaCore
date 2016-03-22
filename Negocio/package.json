@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Micro serviços responsáveis pelo cálculo de frete",
   "scripts": {
-    "test": "lab -t 100",
+    "test": "lab -t 80",
     "start": "node index.js --max_old_space_size=512"
   },
   "dependencies": {

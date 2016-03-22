@@ -23,6 +23,14 @@ lab.describe('Testes com a API de Mapas ' , () => {
 		});
   });
 
+	lab.it('Error on Get Latitude/Longitude', (done) => {
+		trajetos.getGeocode('Rua Da Prata', function(err, result) {
+			console.log(result);
+			Code.expect(err).to.equal(null);
+			done();
+		});
+	});
+
 	lab.it('Calcular distancia da Se para o Bairro', (done) => {
 		var se = config.calculo.origin.location.lat + ',' + config.calculo.origin.location.lng;
 

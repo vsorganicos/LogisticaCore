@@ -10,10 +10,6 @@ WORKDIR /apps/bin
 
 COPY . /apps/bin
 
-COPY docker-entrypoint.sh /entrypoint.sh
-
-RUN chmod +x /entrypoint.sh
-
 RUN npm install pm2 -g
 
 RUN npm install
